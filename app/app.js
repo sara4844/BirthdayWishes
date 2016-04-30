@@ -8,15 +8,15 @@
     app.config(['$routeProvider', function($routeProvider) {
         $routeProvider
             .when("/", {
-                templateUrl : "./main/welcome.html",
+                templateUrl : "./app/main/welcome.html",
                 controller: "welcomeController"
             })
             .when("/MyList", {
-                templateUrl : "./Birthdee/birthdee.html",
+                templateUrl : "./app/Birthdee/birthdee.html",
                 controller: "birthdeeController"
             })
             .when("/Genie", {
-                templateUrl : "./genie/genie.html",
+                templateUrl : "./app/genie/genie.html",
                 controller: "genieController"
             })
             .otherwise({redirectTo: '/'});
